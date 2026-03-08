@@ -1,6 +1,6 @@
 .englishTopPage {
-    margin-top: 100px;
-    margin-left: 150px;
+    margin-top: 10px;
+    margin-left: 70px;
     margin-right: 90px;
     font-weight: bold;
 }
@@ -11,4 +11,5 @@
 }
 .englishTopPage div {
     padding: 5px;
+
 }
