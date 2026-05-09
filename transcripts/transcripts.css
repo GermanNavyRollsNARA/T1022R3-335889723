@@ -1,6 +1,6 @@
 .englishTopPage {
-    margin-top: 10px;
-    margin-left: 70px;
+    margin-top: 100px;
+    margin-left: 150px;
     margin-right: 90px;
     font-weight: bold;
 }
@@ -11,5 +11,147 @@
 }
 .englishTopPage div {
     padding: 5px;
+}
+.underline {
+    text-decoration: underline;
+}
+.center {
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin: 20px 0;
+}
+.centerInflow {
+  align-items: center;
+  text-align: center;
+}
+.spaceout {
+    letter-spacing: 0.4rem;
+    display: block;
+}
+.body {
+    font-family: "UnifrakturCook";
+  font-weight: 600;
+  font-style: normal;
+  margin-left: 50px;
+}
+.leftText {
+    width: 150px;
+    text-align: center;
+}
+.rightText  {
+    display: inline;
+    text-align: right;
+}
+.header {
+    display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.right {
+    padding-top: 20px;
+}
+/* Double underline effect */
+.doubleUnderline {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  margin-right: 50px;
+  margin-left: auto;
+  overflow: visible;;
+}
 
+.double-underline::after,
+.doubleUnderline::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: black;
+  margin: 0;
+}
+
+.doubleUnderline::before {
+  bottom: 0;        /* first underline */
+}
+
+.double-underline::after {
+  bottom: -3px;     /* second underline slightly below */
+}
+.upositions {
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin-bottom: 20px;
+}
+.tableLine th {
+  border-bottom: 2px solid #000; /* the black line */
+  padding-bottom: 4px;           /* slight breathing room */
+}
+
+.alignRightTable {
+  text-align: right;
+  margin-right: 10px;
+}
+.upositions td:first-child {
+  width: 1px;
+  padding-right: 2px;
+  white-space: no-wrap;
+  padding: 0
+}
+.upositions td:nth-child(2) {
+  width: 160px;
+}
+.upositions td:nth-child(3) {
+  width: 150px;
+}
+.briete-label {
+  display: inline-block;
+  margin-left: -35px;
+}
+.lange-label {
+  display: inline-block;
+  margin-left: -200px;
+}
+.upositions td:nth-child(4) {
+  text-align: center;
+  vertical-align: middle;
+}
+.bracket-cell {
+  position: relative;
+  padding-right: 2px; /* space for the bracket */
+}
+
+/* the vertical bracket */
+.bracket-cell::before {
+  content: "";
+  position: absolute;
+  left: 55px;
+  top: 0;
+  bottom: 0;
+  width: 6px;
+
+  border-right: 3px solid #000;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #1d1414;
+
+  border-radius: 6px; /* gives that typewriter “curved brace” look */
+}
+.heavyIndent {
+  padding-left: 0;          /* first line stays flush */
+  text-indent: 0;           /* no first-line indent */
+  margin-left: 0;
+
+  /* the magic */
+  display: block;
+  position: relative;
+}
+
+.heavyIndent span {
+  display: block;
+  text-indent: 50px;       /* pulls the first line back to the left */
+  line-height: 1.3;
+}
+.wideLetter {
+  letter-spacing: 3cap;
 }
