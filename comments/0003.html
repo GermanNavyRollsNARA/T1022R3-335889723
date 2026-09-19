@@ -5,7 +5,7 @@
                 --local-font: var(--font-modern-sans)
             }
             .body {
-                font-family: var(--local-font);
+                font-family: inherit;
                 font-weight: 800;
                 margin: 0;
             }
@@ -55,11 +55,12 @@
         </p>
 
         <p>U-boat positions:</p>
-        <div id="map" style="height: 400px; width: 500px;"></div>
+        <div id="map0003" data-init="initMap0003" style="height: 400px; width: 500px;"></div>
 
 
         <script>
   // Initialize map
+  function initMap0003(container) {
   const map = L.map('map').setView([54.2, 7.7], 9);
 
   map.on('zoom', () => {
@@ -156,6 +157,7 @@ const geodesicLine = L.geodesic(coords, {
 
 map.fitBounds(geodesicLine.getBounds());
 
+  }
 
         </script>
         </div>
